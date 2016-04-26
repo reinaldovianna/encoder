@@ -1,0 +1,5 @@
+<%= form_tag '/', method: 'post', multipart: true do %>
+  <%= file_field_tag :file, required: true %>
+  <%= select_tag :encode, options_for_select(@encodes) %>
+  <button>Converter!</button>
+<% end %>
